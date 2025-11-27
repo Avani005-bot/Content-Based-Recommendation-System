@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+🎬 Content-Based Movie Recommendation System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A content-based recommendation system built using React.js and machine learning concepts (TF-IDF + Cosine Similarity).
+This project recommends movies to users based on the similarity of movie descriptions, allowing personalized suggestions without user history.
 
-## Available Scripts
+🚀 Project Overview
 
-In the project directory, you can run:
+This project applies content-based filtering, a popular recommendation system technique, to suggest movies similar to a selected title. Movie similarity is calculated using:
 
-### `npm start`
+Text Vectorization (TF-IDF)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Cosine Similarity
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Metadata comparison (genre, description, keywords)
 
-### `npm test`
+The frontend is built with React.js, providing a clean UI for users to search and discover similar movies.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🧠 How It Works
 
-### `npm run build`
+Each movie description is converted into a TF-IDF vector (Term Frequency–Inverse Document Frequency).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The cosine similarity is calculated between movies to determine how alike they are.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+When a user selects a movie, the system returns the top N most similar movies.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+✨ Features
 
-### `npm run eject`
+✔ Search any movie
+✔ Display movie recommendations visually
+✔ Fast & responsive React UI
+✔ Content-based filtering (no user login needed)
+✔ Expandable architecture for ML backend integration
+✔ Clean folder structure and modular components
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🛠️ Tech Stack
+Frontend
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+React.js
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+JavaScript (ES6+)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+CSS
 
-## Learn More
+Machine Learning Concepts
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+TF-IDF Vectorization
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Cosine Similarity
 
-### Code Splitting
+NLP preprocessing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+📂 Project Structure
+├── public/
+│   ├── index.html
+│   ├── favicon.ico
+│   ├── manifest.json
+│   └── robots.txt
+│
+├── src/
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   └── index.css
+│
+├── package.json
+├── package-lock.json
+├── README.md
+└── .gitignore
 
-### Analyzing the Bundle Size
+🧭 How to Run the Project
+1️⃣ Install Dependencies
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2️⃣ Start Development Server
+npm start
 
-### Making a Progressive Web App
+3️⃣ Open in Browser
+http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+📸 Screenshots (Optional)
 
-### Advanced Configuration
+Add screenshots of your UI here later: e.g., home screen, results page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![App Screenshot](./screenshots/home.png)
 
-### Deployment
+📈 Future Improvements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+🔹 Add backend using Python (Flask / FastAPI)
+🔹 Add TMDB API integration
+🔹 Add user-based collaborative filtering
+🔹 Deploy on Netlify / Vercel
 
-### `npm run build` fails to minify
+👩‍💻 Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Avani Parashar
+B.Sc. IT | Machine Learning Enthusiast | React Developer
+
+⭐ Support
+
+If you like this project, don’t forget to ⭐ the repository!
